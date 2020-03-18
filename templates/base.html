@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luiz Paulo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="links">
+            <a href="{{ url_for('index') }}">Sobre</a>
+            <a href="{{ url_for('familia') }}">Família</a>
+            <a href="{{ url_for('amigos') }}">Amigos</a>
+        </div>
+
+        {% block Content %}
+        {% endblock %}
+
+        <div id="linksFooter" class="links">
+            <a href="https://www.linkedin.com/in/luiz-paulo-gomes-31a0a3104/" target="_blank">Linkedin</a>
+            <a href="https://github.com/ldofwar" target="_blank">Github</a>
+            <a href="https://www.instagram.com/luizpaulomxt/" target="_Blank">Instagram</a>
+        </div>
+    </header>
+    
+</body>
+</html>
